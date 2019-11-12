@@ -1,0 +1,14 @@
+{
+  "name": "swype-assignment",
+  "version": "1.0.0",
+  "description": "This is an assignment with Swype!",
+  "main": "index.js",
+  "author": "nguyendichtu91295@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

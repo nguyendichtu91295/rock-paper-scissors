@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game-container {
+    background: lightseagreen;
+    position: relative;
+    max-width: 400px;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.game-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.control {
+    background: goldenrod;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background 0.2s;
+}
+
+.control:hover {
+    background: rgba(218, 165, 32, 0.664);
+}
+
+.button-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-control button {
+    margin: 10px;
+    min-width: 206px;
+}
+
+.text-center { 
+    text-align: center;
+}
+
+#screen-start,
+#screen-pvc,
+#screen-cvc,
+#screen-result {
+    display: none;
+}
+
+#screen-loading,
+#screen-start,
+#screen-pvc,
+#screen-cvc,
+#screen-result {
+    height: 100%;
+}
+
+.screen-loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(-50%);
+}
+
+.options-button {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 0 15px;
+}
+
+.options-button:hover img {
+    width:95%;
+    height:95%;
+    transition: all 0.2s;
+}
+
+.options-button img {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+h2,h3 {
+    color: white;
+}
+
+hr {
+    width: 65%;
+    border: 1px solid gainsboro;
+}
+
+.screen-pvc-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 100px 0 80px 0;
+    position: relative;
+}
+
+.timer {
+    border: 6px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 100%);
+}
+
+.timer * {
+    font-size: 20px;
+    color: white;
+}
+
+.timer-content {
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.game-type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.screen-result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0 80px 0;
+    position: relative;
+    height: 100%;
+}
+
+.result-text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 600;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+}
+
+.p2-result {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.end-control {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.p1-result {
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, -100%);
+}

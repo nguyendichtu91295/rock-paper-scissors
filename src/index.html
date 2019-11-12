@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissor</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <template id="timer-template">
+        <div class="timer">
+            <div class="timer-content" id="timer-content">5</div>
+            <div class="timer-text">Timer</div>
+        </div>
+    </template>
+
+    <div class="game-container">
+        <div class="game-content">
+            <div id="screen-loading">
+                <div class="screen-loading-content">
+                    <div class="text-center">
+                        LOADING...
+                    </div>
+
+                </div>
+            </div>
+
+           <div id="screen-start">
+                <h2 class="text-center">Select Play Mode</h2>
+
+                <div class="button-control">
+                    <button class="control" id="button-pvc">Player vs Computer</button>
+                    <button class="control" id="button-cvc">Computer vs Computer</button>
+                </div>
+           </div>
+
+           <div id="screen-pvc">
+                <div class="screen-pvc-content">
+                   
+                    <div id="timer-container-pvc"></div>
+                    <div class="game-type text-center">
+                        <b>Computer</b>
+                        <hr>
+                        <b>Player</b>
+                    </div>
+                    <div class="options-content">
+                            <h3 class="text-center" >Choose your move</h3>
+                            <div class="options">
+                                <button class="options-button" id="option-rock">
+                                    <img src="/rock.png" alt="rock">
+                                </button>
+                                <button class="options-button" id="option-paper">
+                                    <img src="/paper.png" alt="paper">
+                                </button>
+                                <button class="options-button" id="option-scissors">
+                                    <img src="/scissors.png" alt="scissors">
+                                </button>
+                            </div>
+                    </div>
+                </div>
+
+           </div>
+
+           <div id="screen-cvc">
+                <div id="timer-container-cvc"></div>
+           </div>
+
+           <div id="screen-result">
+               <div class="screen-result-content">
+                    <div class="p2-result">
+                        <button class="options-button">
+                            <img id="p2-result" src="" alt="">
+                        </button>
+                    </div>
+    
+                    <div id="p1-result-text" class="result-text text-center">NO CHOICE!</div>
+    
+                    <div class="end-control">
+                        <button class="control" id="button-play-again">Play again!</button>
+                        <button class="control" id="button-change-mode">Change mode</button>
+                    </div>
+    
+                    <div class="p1-result">
+                        <button class="options-button">
+                            <img id="p1-result" src="" alt="">
+                        </button>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <script src="constant.js"></script>
+    <script src="components/Timer/index.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
